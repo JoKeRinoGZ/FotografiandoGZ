@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotografiando · Inicio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="/assets/logo.png" />
+</head>
+<body>  
+  <header id="header">
+    <a href="/index.html"><img class="logohome" src="/assets/logo.png"></a>
+    <nav>
+      <ul>
+        <b>
+          <li style="background-color: #ededed;"><a href="/index.html" target="_self">Home</a></li>
+          <li><a href="/index.html#about" target="_self">About</a></li>
+          <li><a href="/equipment.html" target="_self">Equipment</a></li>
+          <li><a href="/locate.html" target="_self">Locate</a></li>
+          <li><a href="/contact.html" target="_self">Contact</a></li>
+          <!-- <abbr title="Log In">
+            <li class="login"><a href="login.html" target="_self"><img src="/assets/login.png" width="12px"></a></li>
+          </abbr> -->
+        </b>
+      </ul>
+    </nav>
+  </header>
+  
+    <section class="fotos">
+        <img src="/assets/fondo.png" id="fondo">
+        <h1 id="text">FOTOGRAFIANDOGZ</h1>
+        <img src="/assets/fondo1.png" id="fondo">
+        <img src="/assets/logozoom.png" id="logo">
+        <img src="/assets/bokeh.png" id="bokeh">
+        <img src="/assets/mano.png" id="mano">
+    </section>
+    <div id="about">
+    <h2>Sobre nosotros</h2>
+    <p class="abouttxt">
+      Nosotros no queremos hacer fotos ni vídeos. Sino inmortalizar momentos; recuerdos, que en un futuro serán
+      disfrutados y recordados al más mínimo detalle y con la mayor calidad posible. Gracias a nuestros expertos con
+      la más alta cualificación del mercado.
+    </p>
+    <center>
+      <div id="Box">
+        <section class="story">
+          <p id="descripcion">
+            Hace poco más de un año nos fascinó la idea de descubrir el mundo a través de una cámara. ¿Y si pudieras
+            sentirte dentro de una cueva helada en la profunda Antártida? ¿O ver el amanecer en globo en Capadocia?
+            Puede parecer una locura, pero queríamos crear la experiencia más inmersiva. Si bien hay muchas maneras de
+            descubrir eventos y lugares, nos dimos cuenta de que no hay mejor manera de experimentar un lugar en este
+            momento que a través de videos mágicos. Una imagen puede valer más que mil palabras, y el video puede
+            llevarte a un lugar y mostrarte un lugar.
+          </p>
+          <div class="content">
+            <img src="/assets/aboutimg.png" id="imagenes">
+          </div>
+        </section>
+      </div>
+
+      <button class="button2"><a href="/equipoFGZ.html"  target="_self">El equipo FGZ</a></button>
+    </center>
+
+  </div>
+
+    <script>
+        let text = document.getElementById("text");
+        let header = document.querySelector("header")
+        window.addEventListener("scroll", function(){
+            let value = window.scrollY;
+            text.style.marginBottom = value * -1.5 + "px";
+            header.style.marginTop = value * -2 + "px";
+        })
+    </script>
+</body>
+
+<footer>
+    <a href="https://www.instagram.com/eloyloozano" target="_blank"><img src="assets/Instagram2.png" width="3%"></a>
+    <a href="https://www.tiktok.com/@eloyloozano" target="_blank"><img src="assets/TikTok2.png" width="3%"></a>
+    <a href="https://discord.gg/Pp83Haxq" target="_blank"><img src="assets/Discord2.png" width="3%"></a>
+    <a href="https://www.youtube.com/channel/UCVPyyy3j2QiojlMl1uT2yWQ" target="_blank"><img src="assets/YouTube2.png"
+        width="3%"></a>
+    <p style="padding-bottom: 10px; ">
+      &#169 2023 Copyright | <a href="index.html" class="urlfinal">
+        www.fotografiando.com</a>
+    </p>
+  </footer>
+</html>
